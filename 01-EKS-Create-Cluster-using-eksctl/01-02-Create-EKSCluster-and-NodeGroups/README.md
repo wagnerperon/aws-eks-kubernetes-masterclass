@@ -20,6 +20,13 @@ eksctl create cluster --name=eksdemo1 \
                       --region=us-east-1 \
                       --zones=us-east-1a,us-east-1b \
                       --without-nodegroup 
+                      
+# Custom
+eksctl create cluster --name=eksdemo1 \
+                      --version=1.22 \
+                      --region=us-east-1 \
+                      --zones=us-east-1a,us-east-1b \
+                      --without-nodegroup 
 
 # Get List of clusters
 eksctl get cluster                  
